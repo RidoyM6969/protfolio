@@ -5,6 +5,7 @@ import imges from "../assets/Ridoy.jpg"
 import { LuDownload } from "react-icons/lu";
 import { FaFacebookF,FaLinkedinIn } from "react-icons/fa";
 import { TbBrandFiverr } from "react-icons/tb";
+import RidoyCv from "../assets/CV.pdf"
 
 const Banner = () => {
   
@@ -26,7 +27,7 @@ const Banner = () => {
         </div>
         <div className="items-center lg:gap-x-7 gap-x-2 flex lg:static px-3 absolute top-[518px] right-[-55px] lg:transform-none transform rotate-[90deg] xl:px-0 lg:px-5">
           <div className="flex gap-x-1 lg:text-[18px] md:text-[16px] items-center border lg:py-3 lg:px-8 md:py-2 md:px-7  rounded-[40px] border-[#8B56F7] py-2 px-4 text-[12px] cursor-pointer ">
-            <a  href="">Download CV</a>
+            <a download href={RidoyCv}>Download CV</a>
             <span><LuDownload/></span>
             </div>
             <a className='border border-[#8B56F7] lg:text-[18px] md:text-[16px] lg:p-3 rounded-[50%] p-1 text-[12px] rotate-[-90deg] lg:rotate-0' href="#"><FaLinkedinIn/></a>
