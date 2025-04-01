@@ -3,6 +3,9 @@ import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import "react-tabs/style/react-tabs.css";
 import Container from "./Container";
 import portfolio1 from "../assets/portfolio1.png";
+import img1 from '../assets/img1.png'
+import img2 from '../assets/img2.png'
+import img3 from '../assets/img3.png'
 
 const Protfolio = () => {
   return (
@@ -16,20 +19,20 @@ const Protfolio = () => {
             <div className="text-center">
               <TabList>
                 <Tab>All Page</Tab>
-                <Tab>Single Page Website</Tab>
-                <Tab>Multipul Page Website</Tab>
+                {/* <Tab>Single Page Website</Tab>
+                <Tab>Multipul Page Website</Tab> */}
               </TabList>
             </div>
 
             <TabPanel>
               <div className="flex items-center gap-x-[50px] justify-center flex-wrap">
                 <img className="lg:w-[48%] py-5" src={portfolio1} alt="" />
-                <img className="lg:w-[48%] py-5" src={portfolio1} alt="" />
-                <img className="lg:w-[48%] py-5" src={portfolio1} alt="" />
-                <img className="lg:w-[48%] py-5" src={portfolio1} alt="" />
+                <img className="lg:w-[48%] py-5" src={img1} alt="" />
+                <img className="lg:w-[48%] py-5" src={img2} alt="" />
+                <img className="lg:w-[48%] py-5" src={img3} alt="" />
               </div>
             </TabPanel>
-            <TabPanel>
+            {/* <TabPanel>
               <div className="flex items-center gap-x-[50px] justify-center flex-wrap">
                 <img className="lg:w-[48%] py-5" src={portfolio1} alt="" />
                 <img className="lg:w-[48%] py-5" src={portfolio1} alt="" />
@@ -41,7 +44,7 @@ const Protfolio = () => {
                 <img className="lg:w-[48%] py-5" src={portfolio1} alt="" />
                 <img className="lg:w-[48%] py-5" src={portfolio1} alt="" />
               </div>
-            </TabPanel>
+            </TabPanel> */}
           </Tabs>
         </div>
       </Container>
